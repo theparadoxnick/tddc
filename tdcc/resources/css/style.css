@@ -1,0 +1,254 @@
+/*
+-----------------
+ Global
+-----------------
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+li,
+p,
+a {
+    color: #4c4c4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.01em;
+    line-height: 1.1em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 20px 0;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.17em;
+}
+
+h5 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: .83em;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #4c4c4c ;
+}
+
+
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea { 
+    background: #fff;
+}
+
+input[type=email],
+input[type=password], input[type=tel],
+input[type=text] {
+    background-color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+.wrap {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button {
+    width: 140px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 3px solid #292929;
+    color: #292929;
+    font-weight: bold;
+    transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button:hover {
+    background-color: #292929;
+    color: #fff;
+}
+
+.selector {
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: #5d5d5d;
+}
+/*
+-----------------
+Header
+-----------------
+*/
+
+.header {
+    position: relative;
+}
+
+.header__background {
+    background-image: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header__logo {
+    width: 100%;
+    max-width: 370px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+}
+
+.navbar__list {
+    display: flex;
+    padding-top: 20px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.navbar__item {
+    margin-right: 200px;
+    list-style: none;
+}
+
+.navbar__item:last-child {
+    margin-right: 0px;
+}
+
+.navbar__link {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.navbar__link.-red:hover {
+    color: #e44e46;
+}
+
+
+.navbar__link.-yellow:hover {
+    color: #fee64a;
+}
+
+.navbar__link:hover {
+    color: white;
+}
+
+
+.inscricao {
+    background-color: #ffb6b6;
+}
+
+.tour {
+    background-color: #98c4ce;
+    position: relative;
+}
+
+.detail:after {
+    content: '';
+    background-image: url('../img/');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 410px;
+    height: 280px;
+    top: 43%;
+    left: 66%;
+}
+
+.tour__item {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.tour__item span.-active {
+    color: indianred;
+}
+
+/*
+-----------------
+Sobre
+-----------------
+*/
+
+.sobre {
+    background-color: #ffb6b6;
+    padding: 0 0 40px 0;
+}
+
+.sobre__list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.sobre__list:after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    right: 80%;
+    width: 75px;
+    border: 10px solid #92bdcd;
+}
+
+.sobre__item {
+    width: 270px;
+    padding: 20px;
+    color: antiquewhite;
+}
